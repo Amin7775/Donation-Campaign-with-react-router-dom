@@ -9,6 +9,7 @@ const ShowDonations = ({ donation }) => {
     category_bg,
     card_bg,
   } = donation;
+  console.log(donation,"from showdonate")
   return (
     <div className="">
       <div
