@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ShowDonations = ({ donation }) => {
   const {
     id,
@@ -42,7 +44,10 @@ const ShowDonations = ({ donation }) => {
               {title}
             </h1>
           </div>
-          <p className=" text-lg font-semibold" style={{ color: `${text_button_bg}` }}>${price}</p>
+          <p className=" text-lg font-semibold mb-5" style={{ color: `${text_button_bg}` }}>${price}</p>
+              <Link to={`/donationDetails/${id}`}>
+          <button style={{backgroundColor: `${text_button_bg}`}} className="btn text-white font-semibold">View Details</button>
+              </Link>
         </div>
       </div>
     </div>

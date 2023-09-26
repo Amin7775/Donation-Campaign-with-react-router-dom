@@ -22,7 +22,7 @@ const Donation = () => {
          
     }
       </div>
-
+        {/* btn */}
       <div className="flex justify-center my-10">
       {donated.length > 4 ? (
         <button
