@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/MZ1z8Xn/H1-Clean-water-for-children.jpg",
+    "title": "Clean Water for Children",
+    "category": "Health",
+    "category_bg": "#0052FF",
+    "card_bg": "#0052FF26",
+    "text_button_bg": "#0052FF",
+    "description": "Provides clean water to children in need. This initiative focuses on delivering safe and pure drinking water to children in regions where clean water is scarce. Access to clean water is vital for children's health and well-being, and this program aims to make a significant impact by ensuring a sustainable supply of clean water.",
+    "price": 290.0
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/q7C3XFs/E1-Good-education.jpg",
+    "title": "Good Education",
+    "category": "Education",
+    "category_bg": "#FF444A",
+    "card_bg": "#FF444A26",
+    "text_button_bg": "#FF444A",
+    "description": "Provides access to quality education. Every child deserves access to a quality education. This program strives to make quality education accessible to underserved communities by building schools, providing educational materials, and supporting educational initiatives.",
+    "price": 290.0
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/Fmhv0BX/F1-Better-Food-for-Everyone.jpg",
+    "title": "Better Food for Everyone",
+    "category": "Food",
+    "category_bg": "#F87147",
+    "card_bg": "#F8714726",
+    "text_button_bg": "#F87147",
+    "description": "Ensuring better food access for everyone. Access to nutritious food is a fundamental right. This program focuses on improving food access, reducing food insecurity, and promoting healthy eating habits for individuals and families in need.",
+    "price": 290.0
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/rHkpDBf/C1-Used-Clothing-Drive.jpg",
+    "title": "Used Clothing Drive",
+    "category": "Clothing",
+    "category_bg": "#79C23F",
+    "card_bg": "#79C23F26",
+    "text_button_bg": "#79C23F",
+    "description": "Collecting and distributing used clothing to those in need. Access to warm clothing is essential, especially for those facing challenging circumstances. This program collects and distributes gently used clothing to individuals and families in need, ensuring they stay warm and comfortable.",
+    "price": 290.0
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/Hgf8059/E2-Scholarships-and-Educational-Grants.jpg",
+    "title": "Scholarships and Educational Grants",
+    "category": "Education",
+    "category_bg": "#FF444A",
+    "card_bg": "#FF444A26",
+    "text_button_bg": "#FF444A",
+    "description": "Provides scholarships and grants for education. Access to higher education is often limited by financial constraints. This program offers scholarships and educational grants to deserving students, enabling them to pursue their educational goals without the burden of high costs.",
+    "price": 290.0
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/hdWWqhF/H-2-Patient-Support-and-Medical-Bills.jpg",
+    "title": "Patient Support and Medical Bills",
+    "category": "Health",
+    "category_bg": "#0052FF",
+    "card_bg": "#0052FF26",
+    "text_button_bg": "#0052FF",
+    "description": "Supports patients with their medical bills. This program offers financial assistance to individuals and families facing the burden of medical bills. Medical emergencies can be financially devastating, and this initiative aims to relieve some of that stress by providing financial support for medical expenses.",
+    "price": 290.0
+  },
+  {
+    "id": 7,
+    "picture": "https://i.ibb.co/dtbDcBg/F2-Food-Drives-for-the-Hungry.jpg",
+    "title": "Food Drives for the Hungry",
+    "category": "Food",
+    "category_bg": "#F87147",
+    "card_bg": "#F8714726",
+    "text_button_bg": "#F87147",
+    "description": "Organizing food drives to help the hungry. Hunger is a persistent issue in many communities. This program organizes food drives and initiatives to provide nourishing meals to those in need, alleviating hunger and improving food security.",
+    "price": 290.0
+  },
+  {
+    "id": 8,
+    "picture": "https://i.ibb.co/0XR7ncv/H3-Disaster-Relife.jpg",
+    "title": "Disaster Relief",
+    "category": "Health",
+    "category_bg": "#0052FF",
+    "card_bg": "#0052FF26",
+    "text_button_bg": "#0052FF",
+    "description": "Aid and relief for victims of natural disasters. When natural disasters strike, they can cause immense destruction and suffering. This program provides immediate assistance and relief to the victims of such disasters, including shelter, food, and medical aid, to help them rebuild their lives.",
+    "price": 290.0
+  },
+  {
+    "id": 9,
+    "picture": "https://i.ibb.co/42qcTC9/C2-Clothing-Drives-for-the-Homeless.jpg",
+    "title": "Clothing Drives for the Homeless",
+    "category": "Clothing",
+    "category_bg": "#79C23F",
+    "card_bg": "#79C23F26",
+    "text_button_bg": "#79C23F",
+    "description": "Providing clothing to homeless individuals and families. Homelessness is a pressing issue, and one of the immediate needs of homeless individuals is access to clean clothing. This program organizes clothing drives to provide clothing and essentials to homeless individuals and families, helping them regain their dignity and stay warm.",
+    "price": 290.0
+  },
+  {
+    "id": 10,
+    "picture": "https://i.ibb.co/8Xh6Mzm/E3-Early-Childhood-Education.jpg",
+    "title": "Early Childhood Education",
+    "category": "Education",
+    "category_bg": "#FF444A",
+    "card_bg": "#FF444A26",
+    "text_button_bg": "#FF444A",
+    "description": "Supports early childhood education programs. Early childhood education lays the foundation for a child's future. This program supports early childhood education initiatives, including preschools and educational programs, to ensure that children receive quality education from an early age.",
+    "price": 290.0
+  },
+  {
+    "id": 11,
+    "picture": "https://i.ibb.co/MGm7zJp/C3-Refugee-Clothing-Assistance.jpg",
+    "title": "Refugee Clothing Assistance",
+    "category": "Clothing",
+    "category_bg": "#79C23F",
+    "card_bg": "#79C23F26",
+    "text_button_bg": "#79C23F",
+    "description": "Assisting refugees with clothing and essentials. Refugees often flee their homes with very few possessions. This program aims to provide clothing and essential items to refugees, helping them adapt to their new environments and rebuild their lives with dignity.",
+    "price": 290.0
+  }, {
+    "id": 9,
+    "picture": "https://i.ibb.co/9HW7wvD/F3-Food-and-Nutrition-Research.jpg",
+    "title": "Food and Nutrition Research",
+    "category": "Food",
+    "category_bg": "#F87147",
+    "card_bg": "#F8714726",
+    "text_button_bg": "#F87147",
+    "description": "Researching food and nutrition for a healthier world.",
+    "price": 290.00
+  }
+]
