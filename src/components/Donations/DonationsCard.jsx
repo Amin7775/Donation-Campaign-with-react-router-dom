@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
+
 const DonationsCard = ({ donation }) => {
   const {
     id,picture,title,category,category_bg,card_bg,text_button_bg,description,price,
   } = donation;
   return (
     <div>
+        <Link to={`/donationDetails/${id}`}>
       <div className="card card-compact w-full bg-base-100 shadow-xl" style={{backgroundColor:`${card_bg}`}}>
         <figure>
           <img 
@@ -20,6 +23,7 @@ const DonationsCard = ({ donation }) => {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 };
