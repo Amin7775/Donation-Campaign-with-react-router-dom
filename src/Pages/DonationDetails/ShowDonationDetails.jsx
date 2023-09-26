@@ -1,8 +1,30 @@
 const ShowDonationDetails = ({ donation }) => {
-  console.log(donation);
+  // console.log(donation);
   const {
-    picture,title,description,price,
+    id,picture,title,description,price,
   } = donation; 
+
+  const handleDonateBtn=()=>{
+    const addedDonationArrays =[];
+
+
+    const getStoredDonation=JSON.parse(localStorage.getItem('donationDetails'));
+
+    if(!getStoredDonation){
+      addedDonationArrays.push(donation);
+      localStorage.setItem('donationDetails',JSON.stringify(addedDonationArrays));
+    }else{
+      const isExist = getStoredDonation.find(item => item.id ===id);
+      if(!isExist){
+        addedDonationArrays.push(...getStoredDonation,donation)
+
+        localStorage.setItem('donationDetails',JSON.stringify(addedDonationArrays));
+      }
+    }
+
+  }
+
+
   return (
     <div className="max-w-[1440px] mx-auto">
       <div
@@ -13,7 +35,9 @@ const ShowDonationDetails = ({ donation }) => {
         }}
       >
         <div className="hero-overlay bg-opacity-50 absolute bottom-0 h-1/6 flex items-center">
-        <button className="btn bg-[#FF444A] text-white py-4 px-8  rounded-none border-0 rounded-r-lg font-semibold text-xl h-auto ml-10">
+        <button 
+        onClick={handleDonateBtn}
+         className="btn bg-[#FF444A] text-white py-4 px-8  rounded-none border-0 rounded-r-lg font-semibold text-xl h-auto ml-10">
               Donate ${price}
             </button>
         </div>
