@@ -1,6 +1,19 @@
 
 
-const Banner = () => {
+const Banner = ({setSearch,search}) => {
+  
+  // form 
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    console.log(e.target.searchBar.value)
+  }
+
+  // search
+  const handleSearch=(e)=>{
+    let searchChange = e.target.value;
+    setSearch(searchChange)
+  }
+
     return (
         <div
       style={{
@@ -13,15 +26,23 @@ const Banner = () => {
           <h1 className="text-5xl font-bold mb-10">
             I Grow By Helping People In Need
           </h1>
-          <div className="flex flex-col md:flex-row max-w-[600px] mx-auto justify-center items-center gap-5 md:gap-0">
+          <div>
+            <form className="flex flex-col md:flex-row max-w-[600px] mx-auto justify-center items-center gap-5 md:gap-0" onSubmit={handleSubmit}>
+            
             <input
               type="text"
+              name="searchBar"
               className=" border-2 border-gray-200 w-[400px] lg:w-[500px] p-[14px] rounded-l-lg"
               placeholder="Search Here ..."
+              onChange={handleSearch}
             />
-            <button className="btn bg-[#FF444A] text-white p-4 w-36 h-full rounded-none border-0 rounded-r-lg font-semibold">
+
+            <input type="submit" value="Submit" className="btn bg-[#FF444A] text-white p-4 w-36 h-full rounded-none border-0 rounded-r-lg font-semibold"/>
+            
+            {/* <button className="btn bg-[#FF444A] text-white p-4 w-36 h-full rounded-none border-0 rounded-r-lg font-semibold">
               Search
-            </button>
+            </button> */}
+            </form>
           </div>
         </div>
       </div>

@@ -6,19 +6,32 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
     const [donations,setDonations]= useState([]);
-
+    // const [state,setState]=useState(null);
+    const [search,setSearch]=useState(null);
+    
     useEffect(()=>{
         fetch('/data.json')
         .then(res=> res.json())
         .then(data=> setDonations(data))
     },[])
 
-    // console.log(donations)
+    
+    // console.log(search)
+    // useEffect(()=>{
+    //   if(search===null){
+    //     setState(donations)
+    //   }else{
+    //     const data = donations.filter(search)
+    //     setState(data);
+    //   }
+    // },[])
+
+    // console.log(state,"State")
   return (
     <div>
-        <Banner></Banner>
+        <Banner setSearch={setSearch} search={search}></Banner>
         <div className="my-14">
-        <Donations donations={donations}></Donations>
+        <Donations  donations={donations}></Donations>
         </div>
     </div>
   );

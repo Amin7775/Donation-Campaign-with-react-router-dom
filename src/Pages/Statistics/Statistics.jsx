@@ -60,6 +60,7 @@ const Statistics = () => {
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
+          <Tooltip></Tooltip>
           <Legend iconType="plainline" iconSize={100} />
         </PieChart>
       </ResponsiveContainer>
