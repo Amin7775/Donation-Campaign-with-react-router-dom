@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ShowDonationDetails = ({ donation }) => {
   // console.log(donation);
   const {
@@ -5,6 +8,8 @@ const ShowDonationDetails = ({ donation }) => {
   } = donation; 
 
   const handleDonateBtn=()=>{
+    // toast("Wow so easy!")
+    
     const addedDonationArrays =[];
 
 
@@ -13,12 +18,17 @@ const ShowDonationDetails = ({ donation }) => {
     if(!getStoredDonation){
       addedDonationArrays.push(donation);
       localStorage.setItem('donationDetails',JSON.stringify(addedDonationArrays));
+      toast("Thank You For Your Donation")
     }else{
+      // toast("Wow so easy1!")
       const isExist = getStoredDonation.find(item => item.id ===id);
       if(!isExist){
         addedDonationArrays.push(...getStoredDonation,donation)
 
         localStorage.setItem('donationDetails',JSON.stringify(addedDonationArrays));
+        toast("Thank You For Your Donation")
+      }else{
+        toast("You Have Already Donated To This Campaign")
       }
     }
 
@@ -48,6 +58,7 @@ const ShowDonationDetails = ({ donation }) => {
         <h1 className="text-3xl md:text-5xl font-semibold">{title}</h1>
         <p className="text-lg text-gray-700">{description}</p>
       </div>
+      <ToastContainer />
     </div>
   );
 };
