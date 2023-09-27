@@ -13,8 +13,8 @@ const Donation = () => {
   }, []);
 //   console.log(showlocalStorage);
   return (
-    <div className="max-w-[1440px] mx-auto mb-10">
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 my-20">
+    <div className="max-w-[1440px] mx-auto mb-10 p-5 lg:p-0">
+      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-5 my-10 lg:my-20 ">
         {isShow ? donated.map((donation) => (
           <ShowDonations key={donation.id} donation={donation}></ShowDonations>
         )):

@@ -22,11 +22,11 @@ const ShowDonations = ({ donation }) => {
           <img
             src={picture}
             alt="image"
-            className="h-[250px] w-[400px] object-cover"
+            className="h-full  md:h-[250px] md:w-[400px] object-cover"
           />
         </div>
-        <div className="p-6">
-          <p className="mb-4">
+        <div className="py-1 px-3 md:p-6">
+          <p className="mt-5 md:mt-0 mb-4">
             <span
               className="font-medium py-1 px-3"
               style={{
@@ -39,14 +39,14 @@ const ShowDonations = ({ donation }) => {
           </p>
           <div className="card-actions justify-start mb-1">
             <h1
-              className="text-2xl font-semibold"
+              className="text-xl md:text-2xl font-semibold"
             >
               {title}
             </h1>
           </div>
-          <p className=" text-lg font-semibold mb-5" style={{ color: `${text_button_bg}` }}>${price}</p>
+          <p className="text-base md:text-lg font-semibold mb-5" style={{ color: `${text_button_bg}` }}>${price}</p>
               <Link to={`/donationDetails/${id}`}>
-          <button style={{backgroundColor: `${text_button_bg}`}} className="btn text-white font-semibold">View Details</button>
+          <button style={{backgroundColor: `${text_button_bg}`}} className="btn text-white font-medium md:font-semibold mb-3 md:mb-0">View Details</button>
               </Link>
         </div>
       </div>
